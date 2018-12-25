@@ -1,0 +1,12 @@
+# VSCode
+.vscode/
+
+# Build artifacts
+bin/
+build/
+Makefile
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
