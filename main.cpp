@@ -1,12 +1,11 @@
 #include <iostream>
+#include <bits/stdc++.h>
 #include <boost/algorithm/string.hpp>
 
 using namespace std;
 
 void stdin_loop(void handler(string))
 {
-    cout << "Type stuff and it will be echoed to you" << endl;
-
     string line = "";
     while (getline(cin, line))
     {
@@ -14,14 +13,17 @@ void stdin_loop(void handler(string))
     }
 }
 
-int **arr;
-
 void handle_line(string line)
 {
-    cout << "You wrote: " + line << endl;
+    vector<string> input_vector;
+    boost::split(input_vector, line, [](char c) { return c == ' '; });
+
+    for_each(input_vector.begin(), input_vector.end(), [](string item) {
+        cout << item << endl;
+    });
 }
 
-int main(int argc, char *argv[])
+int main()
 {
     stdin_loop(handle_line);
     return 0;

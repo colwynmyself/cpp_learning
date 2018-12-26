@@ -2,11 +2,14 @@
 .vscode/
 
 # Build artifacts
-bin/
-build/
-Makefile
 
-# CMake
+## Conan
+build/
+
+## CMake
+bin/
+Makefile
 CMakeFiles/
 CMakeCache.txt
 cmake_install.cmake
+compile_commands.json
