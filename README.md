@@ -12,4 +12,4 @@ You can now run anything in `./bin`
 
 ## VSCode Development
 
-You'll want to add `"compileCommands": "${workspaceFolder}/compile_commands.json"` to your `./vscode/c_cpp_properties.json` file to get correct intellisense.
+You'll want to add `"compileCommands": "${workspaceFolder}/compile_commands.json"` to your `./.vscode/c_cpp_properties.json` file to get correct intellisense.
