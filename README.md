@@ -8,7 +8,7 @@ A repo for me to learn how to write C++ and use CMake.
 2. `conan install . -if build`
 3. `conan build . -sf . -if build`
 
-You can now run `./bin/main`
+You can now run anything in `./bin`
 
 ## VSCode Development
 
